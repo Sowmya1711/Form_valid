@@ -88,7 +88,7 @@ function formValidation(){
 		}
 		
 
-//keyup function
+//onchange function
 		function fnFunction() {
    		if( document.myForm.fname.value == "" )
    			document.getElementById('errFirstName').innerHTML = "Please provide your firstname";
