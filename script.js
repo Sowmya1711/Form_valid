@@ -21,12 +21,12 @@ function formValidation(){
 		}
 
 		var email = document.getElementById('txtEmail');
-    	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    	if (!filter.test(email.value)) {
+    		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    		if (!filter.test(email.value)) {
     		document.getElementById('errEmail').innerHTML = "Enter valid mail Id with the conditions";
     		document.myForm.email.focus();
-    	//return false;
-    	}else{
+    		//return false;
+    		}else{
 			
 		}
 
@@ -41,19 +41,19 @@ function formValidation(){
 		}
 
   		var p = document.getElementById('password').value,
-     	errors = [];     	
-     	if (p.length < 6) {
+     		errors = [];     	
+     		if (p.length < 6) {
      		errors.push("Password should be maximum 6 digits !");
-     	} if (p.search(/[A-Z]/i) < 0) {
-        errors.push(" use one upper case");
-       	} if (p.search(/[~!,*@]/i) < 0) {
-        errors.push(" use special characters ~!,*");
-        } if (p.search(/[0-9]/) < 0) {
-        errors.push(" and use one digit "); 
-        } if (errors.length > 0) {
+     		} if (p.search(/[A-Z]/i) < 0) {
+        	errors.push(" use one upper case");
+       		} if (p.search(/[~!,*@]/i) < 0) {
+        	errors.push(" use special characters ~!,*");
+        	} if (p.search(/[0-9]/) < 0) {
+        	errors.push(" and use one digit "); 
+        	} if (errors.length > 0) {
      		document.getElementById('errPassword').innerHTML = errors.join("\n");
      		return false;
-     	}
+     		}
 
 		//confirm password validation 
 		if (document.myForm.psw.value != document.myForm.cpsw.value) {
@@ -99,12 +99,12 @@ function formValidation(){
    		}
 		function emidFunction() {
    		var email = document.getElementById('txtEmail');
-    	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    	if (!filter.test(email.value)) {
+    		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    		if (!filter.test(email.value)) {
     		document.getElementById('errEmail').innerHTML = "Enter valid mail Id with the conditions";
     		document.myForm.email.focus();
     		//return false;
-    	}else{
+    		}else{
 			}
   		}  
 		function phFunction() {
